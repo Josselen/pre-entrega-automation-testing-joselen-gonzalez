@@ -22,7 +22,8 @@ Se automatizan los siguientes flujos:
 
 ## Estructura del proyecto
 
-````md
+## Estructura del proyecto
+
 ```bash
 pre-entrega-automation-testing-joselen-gonzalez/
 ├── tests/
@@ -58,27 +59,28 @@ python3 -m pytest -v
 Ejecutar pruebas y generar reporte HTML:
 
 python3 -m pytest -v --html=reports/reporte.html
-Casos de prueba automatizados
-Login exitoso
-Navega a https://www.saucedemo.com/
-Ingresa usuario válido: standard_user
-Ingresa contraseña válida: secret_sauce
-Valida redirección a la página de inventario.
-Catálogo de productos
-Valida que el título de la página sea Products.
-Comprueba que existan productos visibles.
-Obtiene nombre y precio del primer producto.
-Valida presencia de elementos importantes como menú y filtro.
-Carrito de compras
-Agrega un producto al carrito.
-Valida que el contador del carrito muestre 1.
-Ingresa al carrito.
-Verifica que el producto agregado esté presente.
-Reporte
 
-El reporte HTML de ejecución se genera en:
+```md
+## Casos de prueba automatizados
 
-reports/reporte.html
+### 🔐 Login exitoso
+- Navega a https://www.saucedemo.com/
+- Ingresa usuario válido: `standard_user`
+- Ingresa contraseña válida: `secret_sauce`
+- Valida redirección a inventario
+
+### 🛒 Catálogo de productos
+- Valida título `Products`
+- Verifica productos visibles
+- Obtiene nombre y precio del primer producto
+- Valida menú y filtro
+
+### 🧾 Carrito de compras
+- Agrega producto al carrito
+- Verifica contador = `1`
+- Ingresa al carrito
+- Valida producto agregado
+
 
 Autor
 Joselen Gonzalez
