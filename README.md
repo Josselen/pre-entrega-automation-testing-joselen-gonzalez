@@ -39,47 +39,76 @@ pre-entrega-automation-testing-joselen-gonzalez/
 ├── pytest.ini
 ├── requirements.txt
 ├── README.md
-└── .gitignore 
+└── .gitignore
 ```
 
-⚙️ Instalación
-Crear y activar entorno virtual
+---
+
+## ⚙️ Instalación
+
+Crear y activar entorno virtual:
+
+```bash
 python3 -m venv .venv
 source .venv/bin/activate
-Instalar dependencias
+```
+
+Instalar dependencias:
+
+```bash
 python3 -m pip install -r requirements.txt
+```
 
-▶️ Ejecución de pruebas
-Ejecutar todas las pruebas
+---
+
+## ▶️ Ejecución de pruebas
+
+Ejecutar todas las pruebas:
+
+```bash
 python3 -m pytest -v
-Ejecutar pruebas y generar reporte HTML
+```
+
+Ejecutar pruebas y generar reporte HTML:
+
+```bash
 python3 -m pytest -v --html=reports/reporte.html
+```
 
-🧪 Casos de prueba automatizados
+---
 
-🔐 Login exitoso
-Navega a https://www.saucedemo.com/
-Ingresa usuario válido: standard_user
-Ingresa contraseña válida: secret_sauce
-Valida redirección a inventario
+## 🧪 Casos de prueba automatizados
 
-🛒 Catálogo de productos
-Valida título Products
-Verifica productos visibles
-Obtiene nombre y precio del primer producto
-Valida menú y filtro
+### 🔐 Login exitoso
+- Navega a https://www.saucedemo.com/
+- Ingresa usuario válido: `standard_user`
+- Ingresa contraseña válida: `secret_sauce`
+- Valida redirección a inventario
 
-🧾 Carrito de compras
-Agrega producto al carrito
-Verifica contador = 1
-Ingresa al carrito
-Valida producto agregado
+### 🛒 Catálogo de productos
+- Valida título `Products`
+- Verifica productos visibles
+- Obtiene nombre y precio del primer producto
+- Valida menú y filtro
 
-📊 Reporte
+### 🧾 Carrito de compras
+- Agrega producto al carrito
+- Verifica contador = `1`
+- Ingresa al carrito
+- Valida producto agregado
+
+---
+
+## 📊 Reporte
 
 El reporte HTML de ejecución se genera en:
 
+```
 reports/reporte.html
+```
 
-👩‍💻 Autor
+---
+
+## 👩‍💻 Autor
+
 Joselen Gonzalez
