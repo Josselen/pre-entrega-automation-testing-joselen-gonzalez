@@ -26,7 +26,7 @@ Se automatizan los siguientes flujos:
 
 ## 📁 Estructura del proyecto
 
-```bash
+```
 pre-entrega-automation-testing-joselen-gonzalez/
 ├── tests/
 │   └── test_saucedemo.py
