@@ -39,7 +39,8 @@ pre-entrega-automation-testing-joselen-gonzalez/
 ├── pytest.ini
 ├── requirements.txt
 ├── README.md
-└── .gitignore ```
+└── .gitignore 
+```
 
 ⚙️ Instalación
 Crear y activar entorno virtual
